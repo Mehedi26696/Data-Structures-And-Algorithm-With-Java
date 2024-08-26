@@ -26,7 +26,13 @@ public class var3{
 
                 //floating number input
 
-                double n = sc.nextDouble();
-                System.out.println(n);
+                // float marks = sc.nextFloat();
+                // System.out.println(marks);
+
+
+                //double number input
+
+            //     double n = sc.nextDouble();
+            //     System.out.println(n);
           }
 }

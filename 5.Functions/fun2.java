@@ -1,6 +1,7 @@
 
 
 //function
+//with return type
 //sum
 
 import java.util.*;

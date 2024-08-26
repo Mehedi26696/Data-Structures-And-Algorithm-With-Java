@@ -18,7 +18,10 @@ public class rec1{
           {
                 Scanner sc = new Scanner(System.in);
                 int n = sc.nextInt();
+ 
 
                 printNumbers(n);
           }
 }
+
+

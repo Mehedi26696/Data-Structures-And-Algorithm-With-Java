@@ -1,5 +1,6 @@
 
 //function
+//no return type
 
 import java.util.*;
 public class fun1{
