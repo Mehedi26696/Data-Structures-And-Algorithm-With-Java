@@ -32,6 +32,9 @@ public class arr5{
                 //     }
                 //     System.out.println();
                 // }
+
+
+                
                 //2nd way
                 //  for(int i =0;i<num.length;i++)
                 // {

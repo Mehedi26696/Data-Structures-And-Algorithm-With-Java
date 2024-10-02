@@ -19,8 +19,8 @@ public class fun6{
             System.out.println(Arrays.toString(v));
         }
 
-        static void fun2(int a,int b, String ..v)  //variable arguments should be at the end
+        static void fun2(int a,int b, String ...v)  //variable arguments should be at the end
         {
-
+              System.out.println(a+" "+b+" "+Arrays.toString(v));
         }
 }

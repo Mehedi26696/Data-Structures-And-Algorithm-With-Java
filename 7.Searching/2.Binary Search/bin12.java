@@ -78,7 +78,7 @@ public class bin12{
                  {   
                     //if in some cases mid is the first element of this array then mid-1 gives error that's why we make a check 
                     //also when we find  arr[mid]<arr[mid-1] this is pivot cause two part of of the array is sorted in ascending order
-                    return mid;
+                    return mid-1;
                  }
                  if(arr[mid]<=arr[s]) 
                  {  
