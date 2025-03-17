@@ -26,6 +26,7 @@ public class bin4{
 
                 int target =sc.nextInt();
                 System.out.println(arr[binarysearch(arr,target)]);
+                sc.close();
           }
 
         public static int binarysearch(int[] arr,int target)

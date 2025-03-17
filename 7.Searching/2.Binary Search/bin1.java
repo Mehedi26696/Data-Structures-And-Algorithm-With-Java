@@ -22,6 +22,7 @@ public class bin1{
 
                 int target =sc.nextInt();
                 System.out.println(binarysearch(arr,target));
+  
           }
 
         public static int binarysearch(int[] arr,int target)
