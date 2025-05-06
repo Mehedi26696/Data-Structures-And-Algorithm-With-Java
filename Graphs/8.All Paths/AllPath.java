@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class AllPath { 
+public class AllPath {
 
-     static class Edge {
+    static class Edge {
         int src, dest;
 
         public Edge(int src, int dest) {
@@ -10,7 +10,6 @@ public class AllPath {
             this.dest = dest;
         }
     }
-
 
     static void createGraph(ArrayList<Edge> graph[]) {
         for (int i = 0; i < graph.length; i++) {
@@ -26,30 +25,29 @@ public class AllPath {
         graph[4].add(new Edge(4, 0));
         graph[4].add(new Edge(4, 1));
 
-        
         graph[5].add(new Edge(5, 0));
         graph[5].add(new Edge(5, 2));
 
     }
-    
-     public static void printAllPath(ArrayList<Edge> graph[], int src, int dest, String path) {
-        
 
-        if(src == dest) {
+    public static void printAllPath(ArrayList<Edge> graph[], int src, int dest, String path) {
+
+        if (src == dest) {
             System.out.println(path + dest);
             return;
         }
         for (int i = 0; i < graph[src].size(); i++) {
             Edge edge = graph[src].get(i);
-             
-            if(!path.contains(String.valueOf(edge.dest))) { // Check if the destination is already in the path to avoid cycles
+
+            if (!path.contains(String.valueOf(edge.dest))) { // Check if the destination is already in the path to avoid
+                                                             // cycles
                 // Add the edge to the path and recursively call for the destination vertex
                 printAllPath(graph, edge.dest, dest, path + src + " -> ");
             }
         }
 
     }
-    
+
     public static void main(String[] args) {
         int V = 6; // Number of vertices
         ArrayList<Edge> graph[] = new ArrayList[V];
@@ -64,15 +62,11 @@ public class AllPath {
             System.out.println();
         }
 
-
         int src = 5;
         int dest = 1;
-        
+
         System.out.println("All paths from " + src + " to " + dest + ":");
         printAllPath(graph, src, dest, "");
-        
+
     }
 }
-
-
- 
